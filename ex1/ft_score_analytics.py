@@ -1,7 +1,7 @@
 import sys
 
 
-def calc_scores(argc, scores):
+def calc_scores(argc, scores) -> None:
     print("Total players:", len(scores))
     total = sum(scores)
     print("Total score:", total)
