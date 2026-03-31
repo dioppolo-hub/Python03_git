@@ -37,3 +37,17 @@ if __name__ == "__main__":
     for item in d:
         quantity = round(((d[item] * 100) / num_item))
         print(f"Item {item} represents {quantity}%")
+    biggest = None
+    for num in d:
+        if biggest is None or d[num] > biggest:
+            biggest = d[num]
+            biggest_name = num
+    print(f"Item most abundant: {biggest_name} with quantity {biggest}")
+    lowest = None
+    for num in d:
+        if lowest is None or d[num] < lowest:
+            lowest = d[num]
+            lowest_name = num
+    print(f"Item least abundant: {lowest_name} with quantity {lowest}")
+    d.update({'magic_item': 1})
+    print(f"Updated inventory: {d}")
