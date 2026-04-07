@@ -2,15 +2,12 @@ import random
 import typing
 
 
-def gen_event(Player_list, Action_list) -> typing.Generator[tuple, None, None]:
-    t = ()
-    Player_num = len(Player_list)
-    Action_num = len(Action_list)
+def gen_event(Player_list: list[str], Action_list: list[str]) -> typing.Generator[tuple[str, str], None, None]:
     while True:
         yield (random.choice(Player_list), random.choice(Action_list))
 
 
-def consume_event(lst) -> typing.Generator[list, None, None]:
+def consume_event(lst: list[tuple[str, str]]) -> typing.Generator[tuple[str, str], None, None]:
     while True:
         size = len(lst)
         if size == 0:
