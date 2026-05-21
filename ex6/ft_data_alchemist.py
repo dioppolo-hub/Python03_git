@@ -1,7 +1,7 @@
 import random
 
 
-if __name__ == "__main__":
+def main():
     print("=== Game Data Alchemist ===\n")
     lst = ["Alice", "luca", "Sofia", "Franci", "samu", "bob", "Charlie"]
     print(f"Initial list of players: {lst}")
@@ -17,3 +17,7 @@ if __name__ == "__main__":
     print(f"Score average is {avrg}")
     dct = {x: random.randint(avrg, 750) for x in cap_lst}
     print(f"High scores: {dct}")
+
+
+if __name__ == "__main__":
+    main()

@@ -20,7 +20,7 @@ def consume_event(
         yield temp
 
 
-if __name__ == "__main__":
+def main():
     Player_list = ["Bob", "Dylan", "Alice", "Frank", "Sofia", "Deb"]
     Action_list = ["Run", "Sleep", "Move", "Climb", "Swim", "Grab"]
 
@@ -46,3 +46,7 @@ if __name__ == "__main__":
         print(f"Got event from list: {lst_tuple}")
         lst.remove(lst_tuple)
         print(f"Remains in list: {lst}")
+
+
+if __name__ == "__main__":
+    main()

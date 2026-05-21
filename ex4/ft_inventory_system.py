@@ -9,7 +9,7 @@ def get_inventory(d, arg):
     return d
 
 
-if __name__ == "__main__":
+def main():
     print("=== Inventory System Analysis ===\n")
     d: dict[str, str] = {}
     for arg in sys.argv[1:]:
@@ -56,3 +56,7 @@ if __name__ == "__main__":
     print(f"Item least abundant: {lowest_name} with quantity {lowest}")
     d_int.update({'magic_item': 1})
     print(f"Updated inventory: {d_int}")
+
+
+if __name__ == "__main__":
+    main()

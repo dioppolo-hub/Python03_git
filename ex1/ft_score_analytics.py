@@ -16,7 +16,7 @@ def calc_scores(argc, scores) -> None:
     print()
 
 
-if __name__ == "__main__":
+def main():
     print("=== Player Score Analytics ===")
     argc = len(sys.argv)
     if argc == 1:
@@ -43,3 +43,7 @@ if __name__ == "__main__":
                     print(f"{scores[i]}, ", end="")
                 i += 1
             calc_scores(argc, scores)
+
+
+if __name__ == "__main__":
+    main()

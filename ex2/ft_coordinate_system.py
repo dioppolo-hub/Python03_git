@@ -28,7 +28,7 @@ def get_player_pos():
     return t
 
 
-if __name__ == "__main__":
+def main():
     print("=== Game Coordinate System ===\n")
     print("Get a first set of coordinates")
     t = get_player_pos()
@@ -42,3 +42,7 @@ if __name__ == "__main__":
         (t2[0] - t[0])**2 + (t2[1] - t[1])**2 + (t2[2] - t[2])**2
     )
     print(f"Distance between the 2 sets of coordinates: {two_center}")
+
+
+if __name__ == "__main__":
+    main()

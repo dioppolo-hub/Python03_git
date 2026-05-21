@@ -10,7 +10,7 @@ def gen_player_achievements(achievements):
     return set(rand_ach)
 
 
-if __name__ == "__main__":
+def main():
     print("=== Achievement Tracker System ===\n")
     achievements = [
         'Crafting Genius', 'Strategist', 'World Savior',
@@ -50,3 +50,7 @@ if __name__ == "__main__":
     print(f"Bob is missing: {second_miss}")
     print(f"Charlie is missing: {third_miss}")
     print(f"Dylan is missing: {fourth_miss}")
+
+
+if __name__ == "__main__":
+    main()
